@@ -28,7 +28,7 @@ public class StartActivity extends AppCompatActivity {
                         }
                         if (position == 1){
                             //zmienna potrzebna do utworzenia intencji z dodatkowym parametrem
-                            watchUsuality = "Diver";
+                            watchUsuality = "Chrono";
                         }
                         Intent intent = new Intent(StartActivity.this, BrandListActivity.class);
                         //wysłanie informacji o typie zegarka w intencji

@@ -24,11 +24,11 @@ public class BrandListActivity extends ListActivity {
         String usuality = (String) getIntent().getExtras().get("usuality");
 
         //utworzenie listy zegarków do wyświetlenia o określonym typie
-        List<String> chosenWatches = new ArrayList<String>();
+        List<Watch> chosenWatches = new ArrayList<Watch>();
 
         for(int i = 0; i<Watch.watches.length;i++){
             if(Watch.watches[i].getUsuality().equals(usuality)){
-                chosenWatches.add(Watch.watches[i].getBrand());
+                chosenWatches.add(Watch.watches[i]);
             }
         }
         //------------------------------------
