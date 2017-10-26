@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">3TORStudio Watches</string>
+    <string name="logo">Logo 3TORStudio Watch</string>
+    <string-array name="main_list">
+        <item>CASUAL</item>
+        <item>DIVER</item>
+        <item>OFFICIAL</item>
+        <item>PILOT</item>
+        <item>CHRONO</item>
+    </string-array>
+</resources>
