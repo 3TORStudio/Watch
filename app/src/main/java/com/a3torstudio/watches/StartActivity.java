@@ -22,7 +22,12 @@ public class StartActivity extends AppCompatActivity {
                                             int position,
                                             long id) {
                         if (position == 0){
+                            //zmienna potrzebna do utworzenia intencji z dodatkowym parametrem
+                            String watchUsuality = Watch.watches[position].getUsuality();
+
                             Intent intent = new Intent(StartActivity.this, BrandListActivity.class);
+                            //wysłanie informacji o typie zegarka w intencji
+                            intent.putExtra("usuality",watchUsuality);
                             startActivity(intent);
                         }
                     }
